@@ -5,6 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Calendar, Phone } from 'lucide-react';
 
 const CTASection = () => {
+  const handleEmergencyCall = () => {
+    // Open phone dialer with the emergency number
+    window.location.href = 'tel:+15551234567';
+  };
+
   return (
     <section className="hero-gradient text-white section-padding relative overflow-hidden">
       {/* Animated background elements */}
@@ -33,7 +38,12 @@ const CTASection = () => {
                 <Calendar className="ml-2 h-6 w-6" />
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary glass-effect hover-lift px-8 py-4 text-lg">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              onClick={handleEmergencyCall}
+              className="border-2 border-white text-white hover:bg-white hover:text-primary glass-effect hover-lift px-8 py-4 text-lg transition-all duration-300"
+            >
               Call Now: (555) 123-4567
               <Phone className="ml-2 h-6 w-6" />
             </Button>
