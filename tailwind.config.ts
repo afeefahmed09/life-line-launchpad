@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Medical color palette
+				'medical-green': 'hsl(var(--medical-green))',
+				'medical-red': 'hsl(var(--medical-red))',
+				'medical-navy': 'hsl(var(--medical-navy))',
+				'medical-orange': 'hsl(var(--medical-orange))',
+				'medical-purple': 'hsl(var(--medical-purple))',
+				'medical-teal': 'hsl(var(--medical-teal))',
+				'medical-yellow': 'hsl(var(--medical-yellow))',
+				'medical-pink': 'hsl(var(--medical-pink))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +94,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'shimmer': {
+					'0%': {
+						backgroundPosition: '-200% 0'
+					},
+					'100%': {
+						backgroundPosition: '200% 0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'shimmer': 'shimmer 2s linear infinite'
 			}
 		}
 	},
