@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Phone, Calendar } from 'lucide-react';
+import { ArrowRight, Phone, Calendar, Heart } from 'lucide-react';
 
 const HeroSection = () => {
   return (
